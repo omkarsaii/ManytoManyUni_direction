@@ -24,6 +24,7 @@ public class PersonDao {
 		EntityTransaction entityTransaction=entityManager.getTransaction();
 		
 		entityTransaction.begin();
+//		 entityManager.merge(person);
 		entityManager.persist(person);
 		entityTransaction.commit();
 	}
@@ -34,7 +35,7 @@ public class PersonDao {
 		EntityTransaction entityTransaction=entityManager.getTransaction();
 		
 		entityTransaction.begin();
-		
+//		entityManager.merge(language);
 		entityManager.persist(language);
 		entityTransaction.commit();
 		
